@@ -10,7 +10,7 @@
       username: '{{ lookup("env", "VMWARE_USER") }}'
       password: '{{ lookup("env", "VMWARE_PASSWORD") }}'
       validate_certs: False
-      esxi_hostname: crusher
+      esxi_hostname: crusher.icsa.iad.redhat.com
       name: "{{ new_vm_name }}"
       template: "{{ template }}"
       datacenter: tysons
