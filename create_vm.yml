@@ -6,14 +6,15 @@
   tasks:
   - name: Clone the template
     vmware_guest:
-      hostname: 192.0.2.44
-      username: administrator@vsphere.local
-      password: vmware
+      hostname: "{{ vcenter_hostname }}"
+      username: "{{ vcenter_username }}"
+      password: "{{ vcenter_password }}"
       validate_certs: False
-      name: testvm_2
-      template: template_el7
-      datacenter: DC1
-      folder: /DC1/vm
+      esxi_hostname: crusher
+      name: "{{ new_vm_name }}"
+      template: "{{ template }}"
+      datacenter: tysons
+      folder: /crusher_ds0/{{new_vm_name}}
       state: poweredon
       wait_for_ip_address: yes
   
