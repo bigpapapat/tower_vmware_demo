@@ -16,4 +16,4 @@
       datacenter: tysons
       state: poweredon
       wait_for_ip_address: yes 
-      folder: "Demo VMs"
+      folder: Demo_VMs
