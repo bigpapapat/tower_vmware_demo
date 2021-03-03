@@ -15,5 +15,4 @@
       template: "{{ template }}"
       datacenter: tysons
       state: poweredon
-      wait_for_ip_address: yes 
       folder: Demo_VMs
