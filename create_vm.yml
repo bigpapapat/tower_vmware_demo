@@ -14,7 +14,7 @@
       name: "{{ new_vm_name }}"
       template: "{{ template }}"
       datacenter: tysons
-      folder: /crusher_ds0/{{new_vm_name}}
+      folder: /crusher_ds0
       state: poweredon
       wait_for_ip_address: yes
   
