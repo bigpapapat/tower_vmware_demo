@@ -11,7 +11,8 @@
       server_url: "https://starfleet.icsa.iad.redhat.com"
       name: "test-init"
       hostgroup: "rhel7"
+      compute_resource: tysons_vcenter
+      compute_profile: '1-Small'
       state: present
-      provisioning_method: image
+      provision_method: image
       image: img-rhel7-std-server
-      
