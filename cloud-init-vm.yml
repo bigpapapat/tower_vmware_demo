@@ -4,7 +4,6 @@
   connection: local
   gather_facts: no
   tasks:
-  
   - name: create host record
     redhat.satellite.host:
       username: admin
