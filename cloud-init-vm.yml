@@ -5,7 +5,7 @@
   gather_facts: no
   tasks:
   - name: setup 
-    redhat.satellite.host:
+    theforeman.foreman.host:
       username: admin
       password: password
       server_url: "https://starfleet.icsa.iad.redhat.com"
