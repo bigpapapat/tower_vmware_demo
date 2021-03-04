@@ -1,0 +1,18 @@
+---
+- name: build a cloud-init instance
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
+  
+  - name: create host record
+    redhat.satellite.host:
+      username: admin
+      password: password
+      server_url: "https://starfleet.icsa.iad.redhat.com"
+      name: "test-init"
+      hostgroup: "rhel7"
+      state: present
+      provisioning_method: image
+      image: img-rhel7-std-server
+      
