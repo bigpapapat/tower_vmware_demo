@@ -1,11 +1,15 @@
 ---
-- name: configure an A record
-  nios_a_record:
-    name: a.ansible.com
-    ipv4: 192.168.10.1
-    state: present
-    provider:
-      host: "{{ inventory_hostname_short }}"
-      username: admin
-      password: admin
-  connection: local
+- name: setup infoblox
+  hosts: localhost
+  tasks:
+  
+  - name: configure an A record
+    nios_a_record:
+      name: a.ansible.com
+      ipv4: 192.168.10.1
+      state: present
+      provider:
+        host: "{{ inventory_hostname_short }}"
+        username: admin
+        password: admin
+    connection: local
