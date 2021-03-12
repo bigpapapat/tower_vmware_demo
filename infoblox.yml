@@ -1,3 +1,4 @@
+---
 - name: configure an A record
   nios_a_record:
     name: a.ansible.com
